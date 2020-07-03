@@ -30,7 +30,7 @@ const cardsSequence = [
 ];
 
 /* 
-for manual testing uncomment this one, uncomment line number 69 and comment line number 68
+for manual testing uncomment this one, uncomment line number 82 and comment line number 81
 const INPUT_CARDS = [
   {
     name: "bipin",
@@ -78,8 +78,8 @@ function initializeGame() {
   $("#startgame").click(function () {
     $(".player-card").removeClass("winnerCard");
     let res = startGame();
-    plyrCards = res.plyrs; // for testing comment this line
-    // plyrCards = INPUT_CARDS;  for testing uncomment this line
+    plyrCards = res.plyrs; // for manual testing comment this line
+    // plyrCards = INPUT_CARDS;  for manual testing uncomment this line
     if (plyrCards) {
       renderCards(plyrCards);
     }
